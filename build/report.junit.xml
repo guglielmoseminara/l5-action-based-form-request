@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="ActionBasedFormRequest Test Suite" tests="3" assertions="6" errors="0" failures="0" skipped="0" time="0.057978">
+    <testsuite name="RafflesArgentina\ResourceController\ActionBasedFormRequestTest" file="/var/www1/l5-action-based-form-request/public_html/tests/ActionBasedFormRequestTest.php" tests="3" assertions="6" errors="0" failures="0" skipped="0" time="0.057978">
+      <testcase name="testIndexRules" class="RafflesArgentina\ResourceController\ActionBasedFormRequestTest" classname="RafflesArgentina.ResourceController.ActionBasedFormRequestTest" file="/var/www1/l5-action-based-form-request/public_html/tests/ActionBasedFormRequestTest.php" line="41" assertions="2" time="0.048491"/>
+      <testcase name="testStoreRules" class="RafflesArgentina\ResourceController\ActionBasedFormRequestTest" classname="RafflesArgentina.ResourceController.ActionBasedFormRequestTest" file="/var/www1/l5-action-based-form-request/public_html/tests/ActionBasedFormRequestTest.php" line="50" assertions="2" time="0.005217"/>
+      <testcase name="testUpdateRules" class="RafflesArgentina\ResourceController\ActionBasedFormRequestTest" classname="RafflesArgentina.ResourceController.ActionBasedFormRequestTest" file="/var/www1/l5-action-based-form-request/public_html/tests/ActionBasedFormRequestTest.php" line="59" assertions="2" time="0.004270"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
