@@ -1,6 +1,6 @@
 <?php
 
-namespace RafflesArgentina\ResourceController;
+namespace RafflesArgentina\ActionBasedFormRequest;
 
 use Orchestra\Testbench\TestCase;
 
