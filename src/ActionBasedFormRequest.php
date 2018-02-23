@@ -43,6 +43,6 @@ class ActionBasedFormRequest extends FormRequest
      */
     public function getAction()
     {
-        return explode('@', request()->route()->getActionName())[1];
+        return explode('@', $this->route()->getActionName())[1];
     }
 }
