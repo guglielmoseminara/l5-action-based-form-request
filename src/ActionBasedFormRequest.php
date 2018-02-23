@@ -17,7 +17,11 @@ class ActionBasedFormRequest extends FormRequest
             call_user_func([get_called_class(), 'sanitize']);
         }
 
+<<<<<<< HEAD
         $action = $this->getAction();
+=======
+        $action = explode('@', request()->route()->getActionName())[1];
+>>>>>>> parent of 066dfea... Refactor things
 
         if (method_exists($this, $action)) {
             return call_user_func([get_called_class(), $action]);
