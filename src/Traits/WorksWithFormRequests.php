@@ -2,10 +2,30 @@
 
 namespace RafflesArgentina\ActionBasedFormRequest\Traits;
 
+use Illuminate\Foundation\Http\FormRequest;
 use RafflesArgentina\ActionBasedFormRequest\ActionBasedFormRequest;
 
 trait WorksWithFormRequests
 {
+    /**
+     * Get rules from ActionBasedFormRequest or FormRequest instance.
+     *
+     * @return array
+     */
+    public function getRules()
+    {
+        $action = $this->getActionReplaced();
+        if (method_exists($this->formRequest, $action)) {
+            return call_user_func([$this->formRequest, $action]);
+        }
+
+        if (method_exists($this->formRequest, 'rules')) {
+            return call_user_func([$this->formRequest, 'rules']);
+        }
+
+        return [];
+    }
+
     /**
      * Get action from current request.
      *
@@ -23,12 +43,7 @@ trait WorksWithFormRequests
      */
     public function getRequiredFields()
     {
-        $action = $this->getActionReplaced();
-
-        $rules = $this->formRequest->rules() ?: [];
-        if (method_exists($this->formRequest, $action)) {
-            $rules = call_user_func([$this->formRequest, $action]);
-        }
+        $rules = $this->getRules();
 
         $requiredFields = array_where(
             $rules, function ($value, $key) {
@@ -56,12 +71,7 @@ trait WorksWithFormRequests
      */
     public function getValidationRules()
     {
-        $action = $this->getActionReplaced();
-
-        $rules = $this->formRequest->rules() ?: [];
-        if (method_exists($this->formRequest, $action)) {
-            $rules = call_user_func([$this->formRequest, $action]);
-        }
+        $rules = $this->getRules();
 
         return json_encode($rules);
     }
@@ -87,10 +97,10 @@ trait WorksWithFormRequests
      */
     protected function getFormRequestInstance()
     {
-        if (!$this->formRequest instanceof ActionBasedFormRequest) {
+        if ($this->formRequest) {
             return new $this->formRequest;
         }
 
-        return $this->formRequest;
+        return new FormRequest;
     }
 }
