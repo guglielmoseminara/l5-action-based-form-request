@@ -25,7 +25,7 @@ trait WorksWithFormRequests
     {
         $action = $this->getActionReplaced();
 
-        $rules = [];
+        $rules = $this->formRequest->rules();
         if (method_exists($this->formRequest, $action)) {
             $rules = call_user_func([$this->formRequest, $action]);
         }
@@ -58,7 +58,7 @@ trait WorksWithFormRequests
     {
         $action = $this->getActionReplaced();
 
-        $rules = [];
+        $rules = $this->formRequest->rules();
         if (method_exists($this->formRequest, $action)) {
             $rules = call_user_func([$this->formRequest, $action]);
         }
