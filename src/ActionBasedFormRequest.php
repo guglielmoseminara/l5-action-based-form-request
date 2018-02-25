@@ -17,7 +17,7 @@ class ActionBasedFormRequest extends FormRequest
             call_user_func([get_called_class(), 'sanitize']);
         }
 
-        $action = $this->_getAction();
+        $action = explode('@', request()->route()->getActionName())[1];
 
         if (method_exists($this, $action)) {
             return call_user_func([get_called_class(), $action]);
@@ -34,15 +34,5 @@ class ActionBasedFormRequest extends FormRequest
     public function authorize()
     {
         return true;
-    }
-
-    /**
-     * Get action from Route object.
-     *
-     * @return string
-     */
-    private function _getAction()
-    {
-        return explode('@', $this->route()->getActionName())[1];
     }
 }
