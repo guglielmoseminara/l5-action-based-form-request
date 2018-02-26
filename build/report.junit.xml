@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="ActionBasedFormRequest Test Suite" tests="3" assertions="6" errors="0" failures="0" skipped="0" time="0.069611">
-    <testsuite name="RafflesArgentina\ActionBasedFormRequest\ActionBasedFormRequestTest" file="/home/l5-action-based-form-request/public_html/tests/ActionBasedFormRequestTest.php" tests="3" assertions="6" errors="0" failures="0" skipped="0" time="0.069611">
-      <testcase name="testIndexRules" class="RafflesArgentina\ActionBasedFormRequest\ActionBasedFormRequestTest" classname="RafflesArgentina.ActionBasedFormRequest.ActionBasedFormRequestTest" file="/home/l5-action-based-form-request/public_html/tests/ActionBasedFormRequestTest.php" line="41" assertions="2" time="0.056948"/>
-      <testcase name="testStoreRules" class="RafflesArgentina\ActionBasedFormRequest\ActionBasedFormRequestTest" classname="RafflesArgentina.ActionBasedFormRequest.ActionBasedFormRequestTest" file="/home/l5-action-based-form-request/public_html/tests/ActionBasedFormRequestTest.php" line="50" assertions="2" time="0.007009"/>
-      <testcase name="testUpdateRules" class="RafflesArgentina\ActionBasedFormRequest\ActionBasedFormRequestTest" classname="RafflesArgentina.ActionBasedFormRequest.ActionBasedFormRequestTest" file="/home/l5-action-based-form-request/public_html/tests/ActionBasedFormRequestTest.php" line="59" assertions="2" time="0.005654"/>
+  <testsuite name="ActionBasedFormRequest Test Suite" tests="3" assertions="6" errors="0" failures="0" skipped="0" time="0.068813">
+    <testsuite name="RafflesArgentina\ActionBasedFormRequest\ActionBasedFormRequestTest" file="/home/l5-action-based-form-request/public_html/tests/ActionBasedFormRequestTest.php" tests="3" assertions="6" errors="0" failures="0" skipped="0" time="0.068813">
+      <testcase name="testIndexRules" class="RafflesArgentina\ActionBasedFormRequest\ActionBasedFormRequestTest" classname="RafflesArgentina.ActionBasedFormRequest.ActionBasedFormRequestTest" file="/home/l5-action-based-form-request/public_html/tests/ActionBasedFormRequestTest.php" line="41" assertions="2" time="0.058592"/>
+      <testcase name="testStoreRules" class="RafflesArgentina\ActionBasedFormRequest\ActionBasedFormRequestTest" classname="RafflesArgentina.ActionBasedFormRequest.ActionBasedFormRequestTest" file="/home/l5-action-based-form-request/public_html/tests/ActionBasedFormRequestTest.php" line="50" assertions="2" time="0.005450"/>
+      <testcase name="testUpdateRules" class="RafflesArgentina\ActionBasedFormRequest\ActionBasedFormRequestTest" classname="RafflesArgentina.ActionBasedFormRequest.ActionBasedFormRequestTest" file="/home/l5-action-based-form-request/public_html/tests/ActionBasedFormRequestTest.php" line="59" assertions="2" time="0.004771"/>
     </testsuite>
   </testsuite>
 </testsuites>
