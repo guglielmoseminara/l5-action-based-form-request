@@ -17,7 +17,7 @@ $ composer require rafflesargentina/l5-action-based-form-request
 
 ## Usage
 
-Create a class that extends ActionBasedFormRequest. Then define public static functions matching the name of each controller method you want to validate, returning an array with rules.
+Create a class that extends ActionBasedFormRequest. Then define methods that match the name of each action with request data you want to validate, returning an array with rules.
 
 Example:
 
