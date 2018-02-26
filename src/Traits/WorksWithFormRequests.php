@@ -48,16 +48,10 @@ trait WorksWithFormRequests
         $requiredFields = array_where(
             $rules, function ($value, $key) {
                 if (is_array($value)) {
-                    array_where(
-                        $value, function ($v, $k) {
-                            return str_contains($v, ['required', 'sometimes']);
-                        }
-                    );
+                    $value = implode('|', $value);
                 }
 
-                if (is_string($value)) {
-                    return str_contains($value, ['required', 'sometimes']);
-                }
+                return str_contains($value, ['required', 'sometimes']);
             }
         );
 
