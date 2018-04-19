@@ -1,4 +1,4 @@
-# l5-action-based-form-request
+# Action Based FormRequest for Laravel 5
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
