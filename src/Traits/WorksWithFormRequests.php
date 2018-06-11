@@ -39,7 +39,7 @@ trait WorksWithFormRequests
     /**
      * Get required fields.
      *
-     * @return string JSON
+     * @return array
      */
     public function getRequiredFields()
     {
@@ -55,19 +55,17 @@ trait WorksWithFormRequests
             }
         );
 
-        return json_encode($requiredFields);
+        return $requiredFields;
     }
 
     /**
      * Get validation rules.
      *
-     * @return string JSON
+     * @return array
      */
     public function getValidationRules()
     {
-        $rules = $this->getRules();
-
-        return json_encode($rules);
+        return $this->getRules();
     }
 
     /**
@@ -87,7 +85,7 @@ trait WorksWithFormRequests
     /**
      * Get an instance of FormRequest.
      *
-     * @return ActionBasedFormRequest
+     * @return mixed
      */
     protected function getFormRequestInstance()
     {
