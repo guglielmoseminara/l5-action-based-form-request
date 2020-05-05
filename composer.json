@@ -1,10 +1,10 @@
 {
-    "name": "rafflesargentina/l5-action-based-form-request",
+    "name": "guglielmoseminara/l5-action-based-form-request",
     "description": "Action Based FormRequest for Laravel 5",
     "keywords": [
         "form", "request", "laravel 5"
     ],
-    "homepage": "https://github.com/rafflesargentina/l5-action-based-form-request",
+    "homepage": "https://github.com/guglielmoseminara/l5-action-based-form-request",
     "license": "MIT",
     "authors": [
         {
