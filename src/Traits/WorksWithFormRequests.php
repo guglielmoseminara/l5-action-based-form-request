@@ -4,6 +4,8 @@ namespace RafflesArgentina\ActionBasedFormRequest\Traits;
 
 use Illuminate\Foundation\Http\FormRequest;
 use RafflesArgentina\ActionBasedFormRequest\ActionBasedFormRequest;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
 
 trait WorksWithFormRequests
 {
@@ -45,13 +47,13 @@ trait WorksWithFormRequests
     {
         $rules = $this->getRules();
 
-        $requiredFields = array_where(
+        $requiredFields = Arr::where(
             $rules, function ($value, $key) {
                 if (is_array($value)) {
                     $value = implode('|', $value);
                 }
 
-                return str_contains($value, ['required', 'sometimes']);
+                return Str::contains($value, ['required', 'sometimes']);
             }
         );
 
