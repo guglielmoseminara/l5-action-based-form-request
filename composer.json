@@ -1,6 +1,7 @@
 {
     "name": "guglielmoseminara/l5-action-based-form-request",
     "description": "Action Based FormRequest for Laravel 5",
+    "version": "v2.0.0",
     "keywords": [
         "form", "request", "laravel 5"
     ],
