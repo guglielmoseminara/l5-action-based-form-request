@@ -1,7 +1,7 @@
 {
     "name": "guglielmoseminara/l5-action-based-form-request",
     "description": "Action Based FormRequest for Laravel 5",
-    "version": "v2.1.1",
+    "version": "v2.2.0",
     "keywords": [
         "form", "request", "laravel 5"
     ],
@@ -17,11 +17,11 @@
     ],
     "require": {
         "php" : ">= 7.2.5",
-        "laravel/framework": "6.*"
+        "laravel/framework": "7.*"
     },
     "require-dev": {
-        "orchestra/testbench": "^3.7",
-        "phpunit/phpunit" : "^8.0",
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit" : "^8.4",
         "squizlabs/php_codesniffer": "3.*"
     },
     "autoload": {
